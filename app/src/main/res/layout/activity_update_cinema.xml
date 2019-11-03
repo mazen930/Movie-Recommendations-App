@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".UpdateCinema">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="20sp"
+        android:paddingTop="30sp"
+        >
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_centerInParent="true"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="20dp"
+                android:text="UPDATE CINEMA"
+                />
+
+            <Spinner
+                android:id="@+id/UpdateCinemaSpinner"
+                android:layout_width="327dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="12dp"
+                android:spinnerMode="dialog"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <Button
+                android:id="@+id/GetCinemaForUpdateBtn"
+                android:layout_width="105dp"
+                android:layout_height="wrap_content"
+                android:background="#B6FFBF10"
+                android:onClick="GetCinemaDataClick"
+                android:text="GET NOW"
+                android:textColor="@android:color/background_dark"
+                android:textSize="15sp" />
+
+            <EditText
+                android:id="@+id/CinemaNameUpdate"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="Name "
+                android:inputType="textPersonName"
+                />
+
+
+            <EditText
+                android:id="@+id/CinemaLocationUpdate"
+                android:layout_width="match_parent"
+                android:layout_height="127dp"
+                android:ems="10"
+                android:hint="Location"
+                android:inputType="textMultiLine"
+                />
+
+
+            <Button
+                android:id="@+id/UpdateCinemaBtn"
+                android:layout_width="241dp"
+                android:layout_height="wrap_content"
+
+                android:background="#B6FFBF10"
+                android:onClick="UpdateCinemaClick"
+                android:text="Update NOW"
+                android:textColor="@android:color/background_dark"
+                android:textSize="20sp" />
+
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</android.support.constraint.ConstraintLayout>

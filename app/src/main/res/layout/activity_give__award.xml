@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Give_Award">
+    <android.support.v7.widget.AppCompatImageView
+
+        android:layout_width="1120dp"
+        android:layout_height="wrap_content"
+        android:adjustViewBounds="true"
+        android:cropToPadding="true"
+        android:src="@drawable/adse"
+        android:translationX="-100dp" />
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="20sp"
+        android:paddingTop="30sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_centerInParent="true"
+            android:orientation="vertical">
+
+            <Button
+                android:id="@+id/Award_Movie"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:background="#B6FFBF10"
+                android:onClick="AddAwardToMovie"
+                android:text="Add Award To Movie"
+                android:textColor="@android:color/background_dark"
+                android:textSize="24sp" />
+
+            <Button
+                android:id="@+id/Award_Actor"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:background="#B6FFBF10"
+                android:onClick="AddAwardToActor"
+                android:text="Add Award To Actor"
+                android:textColor="@android:color/background_dark"
+                android:textSize="24sp" />
+
+            <Button
+                android:id="@+id/Award_Author"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:background="#B6FFBF10"
+                android:onClick="AddAwardToAuthor"
+                android:text="Add Award To Author"
+                android:textColor="@android:color/background_dark"
+                android:textSize="24sp" />
+
+            <Button
+                android:id="@+id/Award_Director"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:background="#B6FFBF10"
+                android:onClick="AddAwardToDirector"
+                android:text="Add Award To Director"
+                android:textColor="@android:color/background_dark"
+                android:textSize="24sp" />
+
+
+        </LinearLayout>
+
+    </RelativeLayout>
+</android.support.constraint.ConstraintLayout>

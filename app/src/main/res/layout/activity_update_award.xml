@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AddNewAward">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="20sp"
+        android:paddingTop="30sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0">
+
+        <LinearLayout
+            android:id="@+id/linearLayout"
+            android:layout_width="314dp"
+            android:layout_height="361dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+
+            android:layout_marginTop="51dp"
+            android:orientation="vertical"
+            tools:layout_editor_absoluteX="16dp"
+            tools:layout_editor_absoluteY="103dp">
+
+
+            <Spinner
+                android:id="@+id/UpdateAwardSpinner"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <Button
+                android:id="@+id/Add_Award_Button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+
+                android:background="#B6FFBF10"
+                android:onClick="GetAwardDataClick"
+                android:text="GET NOW"
+                android:textColor="@android:color/background_dark"
+                android:textSize="30sp"
+                tools:layout_editor_absoluteX="20dp"
+                tools:layout_editor_absoluteY="20dp" />
+
+            <EditText
+                android:id="@+id/Award_Name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="Award Name"
+                android:inputType="textPersonName"
+
+                />
+
+
+            <EditText
+                android:id="@+id/Fest_Name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="Festival Name"
+                android:inputType="textPersonName"
+
+                />
+
+
+            <EditText
+                android:id="@+id/Fest_Loc"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="Festival Location"
+                android:inputType="textPersonName"
+
+                />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/Award_type"
+                    android:layout_width="165dp"
+                    android:layout_height="match_parent"
+                    android:text="Select Award Type"
+
+
+                    android:textSize="14sp" />
+
+                <Spinner
+                    android:id="@+id/Award_Type_Spinner"
+                    android:layout_width="181dp"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/Fest_Date"
+                    android:layout_width="165dp"
+                    android:layout_height="match_parent"
+                    android:text="Select Festival Time"
+
+                    android:textSize="14sp" />
+
+                <Spinner
+                    android:id="@+id/Fest_Date_Spinner"
+                    android:layout_width="179dp"
+                    android:layout_height="wrap_content" />
+
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/Add_Award_Button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_below="@+id/Add_Award_Button"
+                android:layout_marginTop="11dp"
+                android:background="#B6FFBF10"
+                android:onClick="UpdateAwardClick"
+                android:text="UPDATE NOW"
+                android:textColor="@android:color/background_dark"
+                android:textSize="30sp" />
+
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</android.support.constraint.ConstraintLayout>

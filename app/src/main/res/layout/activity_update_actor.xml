@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".UpdateActor">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="20sp"
+        android:paddingTop="30sp"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_centerInParent="true"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="20dp"
+                android:text="UPDATE ACTOR"
+                />
+
+            <Spinner
+                android:id="@+id/UpdateActorSpinner"
+                android:layout_width="327dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="12dp"
+                android:spinnerMode="dialog"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <Button
+                android:id="@+id/GetActorBtn"
+                android:layout_width="105dp"
+                android:layout_height="wrap_content"
+
+                android:background="#B6FFBF10"
+                android:onClick="GetActorDataClick"
+                android:text="GET NOW"
+                android:textColor="@android:color/background_dark"
+                android:textSize="15sp" />
+
+
+            <EditText
+                android:id="@+id/actorfullnameUpdate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ems="20"
+                android:hint="Fullname"
+                android:inputType="textPersonName"
+                android:textAppearance="@style/TextAppearance.AppCompat.Light.Widget.PopupMenu.Small"
+                />
+
+
+            <EditText
+                android:id="@+id/ActorBirthDateUpdate"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="Birth date (yyyy/mm/dd)"
+                android:inputType="date"
+                android:textAppearance="@style/TextAppearance.AppCompat.Light.Widget.PopupMenu.Small"
+                />
+
+            <EditText
+                android:id="@+id/actorBriefUpdate"
+                android:layout_width="match_parent"
+                android:layout_height="127dp"
+                android:ems="10"
+                android:hint="Brief"
+                android:inputType="textMultiLine"
+                />
+
+            <Button
+                android:id="@+id/updateactorBtn"
+                android:layout_width="185dp"
+                android:layout_height="wrap_content"
+
+                android:background="#B6FFBF10"
+                android:onClick="UpdateActorClick"
+                android:text="Update NOW"
+                android:textColor="@android:color/background_dark"
+                android:textSize="20sp" />
+
+
+        </LinearLayout>
+
+    </RelativeLayout>
+</android.support.constraint.ConstraintLayout>

@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AddAuthor"
+
+
+    android:theme="@style/AlertDialog.AppCompat"
+
+    >
+
+    <android.support.v7.widget.AppCompatImageView
+
+        android:layout_width="1000dp"
+        android:layout_height="wrap_content"
+        android:adjustViewBounds="true"
+        android:cropToPadding="true"
+        android:src="@drawable/writer"
+        android:translationX="-100dp" />
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="20sp"
+        android:paddingTop="30sp"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_centerInParent="true"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <EditText
+                    android:id="@+id/authorFN"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:hint="First name"
+                    android:textColorHint="#80FFF700"
+                    android:inputType="textPersonName"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Light.Widget.PopupMenu.Small"
+                    android:textColor="@color/editTextYellowColor" />
+
+                <EditText
+                    android:id="@+id/authorLN"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:hint="Last name"
+                    android:textColorHint="#80FFF700"
+                    android:inputType="textPersonName"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Light.Widget.PopupMenu.Small"
+                    android:textColor="@color/editTextYellowColor" />
+            </LinearLayout>
+
+
+            <EditText
+                android:id="@+id/authorBD"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="Birth date (yyyymm-dd)"
+                android:textColorHint="#80FFF700"
+                android:inputType="date"
+                android:textAppearance="@style/TextAppearance.AppCompat.Light.Widget.PopupMenu.Small"
+                android:textColor="@color/editTextYellowColor" />
+
+            <EditText
+                android:id="@+id/authorBrief"
+                android:layout_width="match_parent"
+                android:layout_height="127dp"
+                android:ems="10"
+                android:hint="Brief"
+                android:textColorHint="#80FFF700"
+                android:inputType="textMultiLine"
+                android:textColor="@color/editTextYellowColor" />
+
+            <EditText
+                android:id="@+id/authorStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="Style of writing "
+                android:textSize="16dp"
+                android:textColorHint="#80FFF700"
+                android:inputType="textPersonName"
+                android:textColor="@color/editTextYellowColor" />
+
+            <Button
+                android:id="@+id/addAuthorBtn"
+                android:layout_width="179dp"
+                android:layout_height="wrap_content"
+                android:background="#B6FFBF10"
+                android:onClick="AddAuthorClick"
+                android:text="ADD NOW"
+                android:textColor="@android:color/background_dark"
+                android:textSize="30sp" />
+
+
+        </LinearLayout>
+
+    </RelativeLayout>
+</android.support.constraint.ConstraintLayout>

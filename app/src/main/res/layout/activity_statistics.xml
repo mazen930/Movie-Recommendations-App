@@ -1,0 +1,381 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Statistics">
+
+    <android.support.v7.widget.AppCompatImageView
+        android:layout_width="1120dp"
+        android:layout_height="wrap_content"
+        android:adjustViewBounds="true"
+        android:cropToPadding="true"
+        android:src="@drawable/adse"
+        android:translationX="-100dp" />
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="20sp"
+        android:paddingTop="30sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <!-- <LinearLayout
+         android:layout_width="match_parent"
+         android:layout_height="match_parent"
+         android:layout_centerInParent="true"
+         android:orientation="vertical">-->
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/Stat_Button"
+                android:layout_width="119dp"
+                android:layout_height="wrap_content"
+
+                android:background="#B6FFBF10"
+                android:onClick="getStat"
+                android:text="get statistics"
+                android:textColor="@android:color/background_dark"
+                android:textSize="14sp" />
+
+            <Spinner
+                android:id="@+id/Stat_Spinner"
+                android:layout_width="226dp"
+                android:layout_height="match_parent" />
+        </LinearLayout>
+
+        <com.github.mikephil.charting.charts.BarChart
+            android:id="@+id/graph"
+            android:layout_width="match_parent"
+            android:layout_height="369dp"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="36dp"
+            android:visibility="invisible">
+
+        </com.github.mikephil.charting.charts.BarChart>
+
+        <TableLayout
+            android:id="@+id/table"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignTop="@+id/graph"
+            android:layout_centerHorizontal="true"
+            android:visibility="invisible">
+
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="131dp">
+
+                <TextView
+                    android:id="@+id/textView"
+                    android:layout_width="201dp"
+                    android:layout_height="match_parent"
+                    android:text="No Of Visited Movies" />
+
+                <TextView
+                    android:id="@+id/VisitedM"
+                    android:layout_width="162dp"
+                    android:layout_height="match_parent"
+                    android:text="" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+
+                <TextView
+                    android:id="@+id/textView26"
+                    android:layout_width="201dp"
+                    android:layout_height="match_parent"
+                    android:text="No Of Liked Movies" />
+
+                <TextView
+                    android:id="@+id/LikedM"
+                    android:layout_width="162dp"
+                    android:layout_height="match_parent"
+                    android:text="" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:id="@+id/textView30"
+                    android:layout_width="201dp"
+                    android:layout_height="match_parent"
+                    android:text="No Of Rated Movies" />
+
+                <TextView
+                    android:id="@+id/RatedM"
+                    android:layout_width="162dp"
+                    android:layout_height="match_parent"
+                    android:text="" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="63dp">
+
+                <TextView
+                    android:id="@+id/textView31"
+                    android:layout_width="201dp"
+                    android:layout_height="match_parent"
+                    android:text="No Of Requests Sent" />
+
+                <TextView
+                    android:id="@+id/ReqM"
+                    android:layout_width="162dp"
+                    android:layout_height="match_parent"
+                    android:text="" />
+            </TableRow>
+        </TableLayout>
+
+        <TableLayout
+            android:id="@+id/table1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignTop="@+id/graph"
+            android:layout_centerHorizontal="true"
+            android:visibility="invisible">
+
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="131dp">
+
+                <TextView
+                    android:id="@+id/textView32"
+                    android:layout_width="201dp"
+                    android:layout_height="match_parent"
+                    android:text="No Of Added Movies" />
+
+                <TextView
+                    android:id="@+id/AddedM"
+                    android:layout_width="162dp"
+                    android:layout_height="match_parent"
+                    android:text="" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+
+                <TextView
+                    android:id="@+id/TextView32"
+                    android:layout_width="201dp"
+                    android:layout_height="match_parent"
+                    android:text="No Of Added Ads" />
+
+                <TextView
+                    android:id="@+id/AddedAd"
+                    android:layout_width="162dp"
+                    android:layout_height="match_parent"
+                    android:text="" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:id="@+id/textView33"
+                    android:layout_width="201dp"
+                    android:layout_height="match_parent"
+                    android:text="No Of Replies To Requests" />
+
+                <TextView
+                    android:id="@+id/AnsReq"
+                    android:layout_width="162dp"
+                    android:layout_height="match_parent"
+                    android:text="" />
+
+            </TableRow>
+
+        </TableLayout>
+
+        <TableLayout
+            android:id="@+id/table2"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignTop="@+id/graph"
+            android:layout_centerHorizontal="true"
+            android:visibility="invisible">
+
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="131dp">
+
+                <TextView
+                    android:id="@+id/textView33"
+                    android:layout_width="201dp"
+                    android:layout_height="match_parent"
+                    android:text="No Of Movies" />
+
+                <TextView
+                    android:id="@+id/NoMov"
+                    android:layout_width="162dp"
+                    android:layout_height="match_parent"
+                    android:text="" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+
+                <TextView
+                    android:id="@+id/TextView34"
+                    android:layout_width="201dp"
+                    android:layout_height="match_parent"
+                    android:text="No Of Actors" />
+
+                <TextView
+                    android:id="@+id/NoAct"
+                    android:layout_width="162dp"
+                    android:layout_height="match_parent"
+                    android:text="" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:id="@+id/textView35"
+                    android:layout_width="201dp"
+                    android:layout_height="match_parent"
+                    android:text="No Of Authors" />
+
+                <TextView
+                    android:id="@+id/NoAut"
+                    android:layout_width="162dp"
+                    android:layout_height="match_parent"
+                    android:text="" />
+
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:id="@+id/textView37"
+                    android:layout_width="201dp"
+                    android:layout_height="match_parent"
+                    android:text="No Of  Directors" />
+
+                <TextView
+                    android:id="@+id/NoDir"
+                    android:layout_width="162dp"
+                    android:layout_height="match_parent"
+                    android:text="" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:id="@+id/textView38"
+                    android:layout_width="201dp"
+                    android:layout_height="match_parent"
+                    android:text="No Of Awards" />
+
+                <TextView
+                    android:id="@+id/NoAw"
+                    android:layout_width="162dp"
+                    android:layout_height="match_parent"
+                    android:text="" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:id="@+id/textView39"
+                    android:layout_width="201dp"
+                    android:layout_height="match_parent"
+                    android:text="No Of Cinemas" />
+
+                <TextView
+                    android:id="@+id/NoCin"
+                    android:layout_width="162dp"
+                    android:layout_height="match_parent"
+                    android:text="" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:id="@+id/TextView40"
+                    android:layout_width="201dp"
+                    android:layout_height="match_parent"
+                    android:text="No Of Advertisment" />
+
+                <TextView
+                    android:id="@+id/NoAds"
+                    android:layout_width="162dp"
+                    android:layout_height="match_parent"
+                    android:text="" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:id="@+id/textView41"
+                    android:layout_width="201dp"
+                    android:layout_height="match_parent"
+                    android:text="No Of Followers" />
+
+                <TextView
+                    android:id="@+id/NoFoll"
+                    android:layout_width="162dp"
+                    android:layout_height="match_parent"
+                    android:text="" />
+
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:id="@+id/textView42"
+                    android:layout_width="201dp"
+                    android:layout_height="match_parent"
+                    android:text="No Of Admins" />
+
+                <TextView
+                    android:id="@+id/NoAdmins"
+                    android:layout_width="162dp"
+                    android:layout_height="match_parent"
+                    android:text="" />
+
+            </TableRow>
+
+        </TableLayout>
+
+        <!-- </LinearLayout>-->
+
+    </RelativeLayout>
+
+
+</android.support.constraint.ConstraintLayout>

@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".UpdateItems">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="12sp"
+        android:orientation="vertical"
+        >
+
+        <TextView
+            android:layout_width="311dp"
+            android:layout_height="wrap_content"
+            android:text="   UPDATE FUNCTIONALITIES "
+            android:textSize="20dp" />
+        <Button
+            android:id="@+id/updatemoviebtn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10sp"
+            android:onClick="UpdateMovieActive"
+            android:layout_margin="10sp"
+            android:background="#B6FFBF10"
+            android:text="Update Movie"
+            android:textColor="@android:color/background_dark"
+            android:textSize="15sp" />
+
+        <Button
+            android:id="@+id/updateactorrbtn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10sp"
+            android:onClick="UpdateActorActive"
+            android:layout_margin="10sp"
+            android:background="#B6FFBF10"
+            android:text="Update Actor"
+            android:textColor="@android:color/background_dark"
+            android:textSize="15sp" />
+
+        <Button
+            android:id="@+id/updatedirectorbtn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10sp"
+            android:onClick="UpdateDirectorActive"
+            android:layout_margin="10sp"
+            android:background="#B6FFBF10"
+            android:text="Update Director"
+            android:textColor="@android:color/background_dark"
+            android:textSize="15sp" />
+
+        <Button
+            android:id="@+id/updateauthorbtn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10sp"
+            android:onClick="UpdateAuthorActive"
+            android:layout_margin="10sp"
+            android:background="#B6FFBF10"
+            android:text="Update Author"
+            android:textColor="@android:color/background_dark"
+            android:textSize="15sp" />
+        <Button
+            android:id="@+id/updatecinemabtn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10sp"
+            android:layout_margin="10sp"
+            android:background="#B6FFBF10"
+            android:onClick="UpdateCinemaActive"
+            android:text="Update Cinema"
+            android:textColor="@android:color/background_dark"
+            android:textSize="15sp" />
+
+        <Button
+            android:id="@+id/updateadvbtn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10sp"
+            android:layout_margin="10sp"
+            android:onClick="UpdateAdvActive"
+            android:background="#B6FFBF10"
+            android:text="Update ADV."
+            android:textColor="@android:color/background_dark"
+            android:textSize="15sp" />
+
+        <Button
+            android:id="@+id/updateawardbtn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10sp"
+            android:layout_margin="10sp"
+            android:onClick="UpdateAward"
+            android:background="#B6FFBF10"
+            android:text="Update Award"
+            android:textColor="@android:color/background_dark"
+            android:textSize="15sp" />
+
+
+
+    </LinearLayout>
+</android.support.constraint.ConstraintLayout>

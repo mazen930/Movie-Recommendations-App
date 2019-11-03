@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AddCinema"
+
+    android:theme="@style/AlertDialog.AppCompat"
+    >
+
+    <android.support.v7.widget.AppCompatImageView
+        android:layout_width="1600sp"
+        android:layout_height="1200sp"
+        android:src="@drawable/cinema"
+        android:translationY="-300sp"
+        android:translationX="-200sp"
+        />
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="20sp"
+        android:paddingTop="30sp"
+        >
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_centerInParent="true"
+            android:orientation="vertical">
+
+
+            <EditText
+                android:id="@+id/CinemaNameID"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="Name "
+                android:inputType="textPersonName"
+                android:textColor="@color/editTextYellowColor"
+                android:textColorHint="#80FFF700" />
+
+
+            <EditText
+                android:id="@+id/CinemaLocationID"
+                android:layout_width="match_parent"
+                android:layout_height="127dp"
+                android:ems="10"
+                android:hint="Location"
+                android:textColorHint="#80FFF700"
+                android:inputType="textMultiLine"
+                android:textColor="@color/editTextYellowColor" />
+
+
+            <Button
+                android:id="@+id/addCinemaBtn"
+                android:layout_width="179dp"
+                android:layout_height="wrap_content"
+
+                android:background="#B6FFBF10"
+                android:onClick="AddNewCinemaClick"
+                android:text="ADD NOW"
+                android:textColor="@android:color/background_dark"
+                android:textSize="30sp" />
+
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</android.support.constraint.ConstraintLayout>

@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AddMovieInCinema"
+
+    >
+
+    <LinearLayout
+        android:padding="12sp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerInParent="true"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20dp"
+            android:text="ADD MOVINE IN CINEMA"
+            />
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="12dp"
+            android:text="Cinema Name"
+            />
+
+        <Spinner
+            android:id="@+id/ADDMCCinemasSpinner"
+            android:layout_width="327dp"
+            android:layout_height="40dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="12dp"
+            android:spinnerMode="dialog"
+            android:visibility="visible"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="12dp"
+            android:text="Movie Name"
+            />
+
+        <Spinner
+            android:id="@+id/ADDMCMoviesSpinner"
+            android:layout_width="327dp"
+            android:layout_height="40dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="12dp"
+            android:overScrollMode="ifContentScrolls"
+            android:spinnerMode="dialog"
+            android:visibility="visible"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+        <EditText
+            android:id="@+id/MovinInCinemaTime"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="Starting at (hh:mm:ss)"
+            android:inputType="time"
+            android:textSize="14sp" />
+
+        <EditText
+            android:id="@+id/MovineIncCinemaPrice"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="Price "
+            android:inputType="textPersonName"
+            android:textSize="14sp" />
+
+
+
+        <Button
+            android:id="@+id/addMovineInCinemaBtn"
+            android:layout_width="179dp"
+            android:layout_height="wrap_content"
+            android:onClick="AddMovieInCinemaClick"
+            android:background="@android:color/holo_orange_light"
+            android:text="ADD NOW"
+            android:textColor="@android:color/background_dark"
+            android:textSize="30sp" />
+
+
+    </LinearLayout>
+</android.support.constraint.ConstraintLayout>

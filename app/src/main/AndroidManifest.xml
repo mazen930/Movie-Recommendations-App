@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.android.break2">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <!-- To auto-complete the email text field in the login form with the user's emails -->
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <uses-permission android:name="android.permission.READ_PROFILE" />
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/log"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".Welcome">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".Login"
+            android:label="@string/title_activity_login" />
+        <activity android:name=".SignUp" />
+        <activity
+            android:name=".Home"
+            android:label="@string/title_activity_home"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".Adding" />
+        <activity android:name=".Add_Ads" />
+        <activity android:name=".AddMovie" />
+        <activity android:name=".AddActor" />
+        <activity android:name=".AddAdmin" />
+        <activity android:name=".AddAuthor" />
+        <activity android:name=".AddCinema" />
+        <activity android:name=".AddDirector" />
+        <activity android:name=".AddMovieInCinema" />
+        <activity android:name=".ViewMovie" />
+        <activity android:name=".ViewCrewMember" />
+        <activity android:name=".ListOfItems" />
+        <activity android:name=".ListOfItems2" />
+        <activity android:name=".ListOfItems3" />
+        <activity android:name=".ListOfItems4" />
+        <activity android:name=".Search" />
+        <!-- Sample AdMob App ID: ca-app-pub-3940256099942544~3347511713 -->
+        <meta-data
+            android:name="com.google.android.gms.ads.APPLICATION_ID"
+            android:value="ca-app-pub-3940256099942544~3347511713" />
+
+        <activity android:name=".UpdateActor" />
+        <activity android:name=".UpdateAdv" />
+        <activity android:name=".UpdateAuthor" />
+        <activity android:name=".UpdateCinema" />
+        <activity android:name=".UpdateDirector" />
+        <activity android:name=".UpdateItems" />
+        <activity android:name=".UpdateMovie" />
+        <activity android:name=".DeleteItems" />
+        <activity android:name=".ChangePassword" />
+        <activity android:name=".History" />
+        <activity android:name=".ViewRequestAdmin" />
+        <activity android:name=".Wishlist" />
+        <activity android:name=".AddNewRequest" />
+        <activity android:name=".AddMovieActor" />
+        <activity android:name=".Add_Award_To_Movie" />
+        <activity android:name=".AddNewAward" />
+        <activity android:name=".Give_Award" />
+        <activity android:name=".MyAdapter" />
+        <activity android:name=".StateVO" />
+        <activity android:name=".UpdateAward" />
+        <activity android:name=".Statistics" />
+        <activity android:name=".AddAwardToActor" />
+        <activity android:name=".AddAwardToAuther" />
+        <activity android:name=".AddAwardToDirector" />
+        <activity android:name=".ViewCinema"></activity>
+    </application>
+
+</manifest>

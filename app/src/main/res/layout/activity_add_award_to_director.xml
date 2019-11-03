@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AddAwardToDirector">
+    <android.support.v7.widget.AppCompatImageView
+
+        android:layout_width="1120dp"
+        android:layout_height="wrap_content"
+        android:adjustViewBounds="true"
+        android:cropToPadding="true"
+        android:src="@drawable/adse"
+        android:translationX="-100dp" />
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="20sp"
+        android:paddingTop="30sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_centerInParent="true"
+            android:orientation="vertical">
+
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/Dir"
+                    android:layout_width="165dp"
+                    android:layout_height="match_parent"
+                    android:text="Select Director"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Light.Widget.PopupMenu.Small"
+                    android:textColor="#80FFF700"
+                    android:textSize="14sp" />
+
+                <Spinner
+                    android:id="@+id/Dir_Spinner"
+                    android:layout_width="181dp"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+            <Button
+                android:id="@+id/getM_Button3"
+                android:layout_width="wrap_content"
+                android:layout_height="27dp"
+                android:background="#B6FFBF10"
+                android:onClick="GetAutMovies"
+                android:text="Get Actor Movies"
+                android:textColor="@android:color/background_dark"
+                android:textSize="12dp" />
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/Fest_Date2"
+                    android:layout_width="165dp"
+                    android:layout_height="match_parent"
+                    android:text="Select Award"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Light.Widget.PopupMenu.Small"
+                    android:textColor="#80FFF700"
+                    android:textSize="14sp" />
+
+                <Spinner
+                    android:id="@+id/Award_Spinner2"
+                    android:layout_width="179dp"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+
+            <EditText
+                android:id="@+id/WinDate2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="Winning date (yyyy/mm/dd)"
+                android:inputType="date"
+                android:textAppearance="@style/TextAppearance.AppCompat.Light.Widget.PopupMenu.Small"
+                android:textColor="@color/editTextYellowColor"
+                android:textColorHint="#80FFF700"
+                android:textSize="14sp" />
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/Mov2"
+                    android:layout_width="165dp"
+                    android:layout_height="match_parent"
+                    android:text="Select Movie"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Light.Widget.PopupMenu.Small"
+                    android:textColor="#80FFF700"
+                    android:textSize="14sp" />
+
+                <Spinner
+                    android:id="@+id/Movie_Spinner2"
+                    android:layout_width="181dp"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+            <Button
+                android:id="@+id/Add_Award_Button2"
+                android:layout_width="179dp"
+                android:layout_height="wrap_content"
+
+                android:background="#B6FFBF10"
+                android:onClick="AddAward"
+                android:text="ADD NOW"
+                android:textColor="@android:color/background_dark"
+                android:textSize="30sp" />
+
+
+        </LinearLayout>
+
+    </RelativeLayout>
+</android.support.constraint.ConstraintLayout>

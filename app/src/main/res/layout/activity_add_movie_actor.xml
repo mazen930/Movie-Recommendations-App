@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.android.break2.AddMovieActor">
+
+    <android.support.v7.widget.AppCompatImageView
+        android:layout_width="400sp"
+        android:layout_height="600sp"
+        android:src="@drawable/actor"
+        />
+
+    <Spinner
+        android:id="@+id/Actorspinner"
+        android:layout_width="301dp"
+        android:layout_height="60dp"
+        android:layout_marginBottom="25dp"
+        android:layout_marginStart="42dp"
+        android:layout_marginLeft="42dp"
+        app:layout_constraintBottom_toTopOf="@+id/MovieTV"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Spinner
+        android:id="@+id/Moviespinner"
+        android:layout_width="299dp"
+        android:layout_height="53dp"
+        android:layout_marginBottom="24dp"
+        android:layout_marginStart="43dp"
+        android:layout_marginLeft="43dp"
+        app:layout_constraintBottom_toTopOf="@+id/Character_ET"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <EditText
+        android:id="@+id/Character_ET"
+        android:layout_width="296dp"
+        android:layout_height="54dp"
+        android:layout_marginBottom="30dp"
+        android:layout_marginStart="44dp"
+        android:layout_marginLeft="44dp"
+        android:ems="10"
+        android:hint="@string/Character_ET"
+        android:textColorHint="#80FFF700"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toTopOf="@+id/AddActorToMovieButton"
+        app:layout_constraintStart_toStartOf="parent"
+        android:textColor="@color/editTextYellowColor"/>
+
+    <Button
+        android:id="@+id/AddActorToMovieButton"
+        android:layout_width="179dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="125dp"
+        android:layout_marginLeft="103dp"
+        android:layout_marginStart="103dp"
+        android:background="#B6FFBF10"
+        android:onClick="AddActorToMovie"
+        android:text="@string/AddActorButton"
+        android:textColor="@android:color/background_dark"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/ActorTV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="9dp"
+        android:layout_marginStart="42dp"
+        android:layout_marginLeft="42dp"
+        android:text="@string/ActorTV"
+        app:layout_constraintBottom_toTopOf="@+id/Actorspinner"
+        app:layout_constraintStart_toStartOf="parent"
+        android:textColor="@color/editTextYellowColor"/>
+
+    <TextView
+        android:id="@+id/MovieTV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="27dp"
+        android:layout_marginStart="42dp"
+        android:layout_marginLeft="42dp"
+        android:text="@string/MovieTV"
+        app:layout_constraintBottom_toTopOf="@+id/Moviespinner"
+        app:layout_constraintStart_toStartOf="parent"
+        android:textColor="@color/editTextYellowColor"/>
+
+</android.support.constraint.ConstraintLayout>

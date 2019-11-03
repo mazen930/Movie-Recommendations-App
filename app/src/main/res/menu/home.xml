@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/addfromHome"
+        android:orderInCategory="100"
+        android:title="Add"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/updatefromHome"
+        android:orderInCategory="100"
+        android:title="Update"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/deletefromHome"
+        android:orderInCategory="100"
+        android:title="Delete"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/changePassword"
+        android:orderInCategory="100"
+        android:title="Change Password"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/RQ"
+        android:orderInCategory="100"
+        android:title="Request"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/Reply"
+        android:orderInCategory="100"
+        android:title="View Requests"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/Wish"
+        android:orderInCategory="100"
+        android:title="@string/WishlistTV"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/Hist"
+        android:orderInCategory="100"
+        android:title="@string/HistoryTV"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/Stat"
+        android:orderInCategory="100"
+        android:title="Statistics"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/logout"
+        android:orderInCategory="100"
+        android:title="Logout"
+        app:showAsAction="never" />
+</menu>
+    <!--android:onClick="GoAdd"-->

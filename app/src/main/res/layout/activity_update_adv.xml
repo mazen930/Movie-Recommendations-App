@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".UpdateAdv">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="20sp"
+        android:paddingTop="30sp"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_centerInParent="true"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="20dp"
+                android:text="UPDATE ADVERTISEMENT"
+                />
+
+            <Spinner
+                android:id="@+id/UpdataAdvSpinner"
+                android:layout_width="327dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="12dp"
+                android:spinnerMode="dialog"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <Button
+                android:id="@+id/GetAdvBtn"
+                android:layout_width="98dp"
+                android:layout_height="30dp"
+
+                android:background="#B6FFBF10"
+                android:onClick="GetAdvDataClick"
+                android:text="GET NOW"
+                android:textColor="@android:color/background_dark"
+                android:textSize="15sp" />
+
+
+
+            <EditText
+                android:id="@+id/AdvTitleUpdate"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="Title"
+                />
+
+
+            <EditText
+                android:id="@+id/CompanyNameUpdate"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="Company Name"
+                />
+
+
+            <EditText
+                android:id="@+id/StartDateAdvUpdate"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="Start date (yyyy-mm-dd)"
+                android:inputType="date"
+                />
+
+            <EditText
+                android:id="@+id/EndDateAdvUpdate"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="date"
+                android:hint="End date (yyyy-mm-dd)"
+                />
+
+            <EditText
+                android:id="@+id/AdvContentUpdate"
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:ems="10"
+                android:hint="Content"
+                android:inputType="textMultiLine"
+                />
+
+            <EditText
+                android:id="@+id/AdvPriceUpdate"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="Price"
+                android:inputType="number"
+                />
+            <EditText
+                android:id="@+id/AdvUrlUpdate"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="URL"
+                android:inputType="textPersonName"
+                />
+
+            <Button
+                android:id="@+id/UpdateAdvBtn"
+                android:layout_width="148dp"
+                android:layout_height="32dp"
+                android:background="#B6FFBF10"
+                android:onClick="UpdateAdvClick"
+                android:text="Update Now"
+                android:textColor="@android:color/background_dark"
+                android:textSize="20sp" />
+
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</android.support.constraint.ConstraintLayout>

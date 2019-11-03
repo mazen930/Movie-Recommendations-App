@@ -1,0 +1,243 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:theme="@style/AlertDialog.AppCompat"
+
+
+    tools:context=".AddMovie"
+
+    >
+
+    <android.support.v7.widget.AppCompatImageView
+
+        android:layout_width="1120dp"
+        android:layout_height="wrap_content"
+        android:adjustViewBounds="true"
+        android:cropToPadding="true"
+        android:src="@drawable/adse"
+        android:translationX="-100dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.54"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="20sp"
+        android:paddingTop="30sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_centerInParent="true"
+            android:orientation="vertical">
+
+
+            <EditText
+                android:id="@+id/movieName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="Name"
+                android:inputType="textPersonName"
+                android:textAppearance="@style/TextAppearance.AppCompat.Light.Widget.PopupMenu.Small"
+                android:textColor="@color/editTextYellowColor"
+                android:textColorHint="#80FFF700"
+                android:textSize="14sp" />
+
+
+            <EditText
+                android:id="@+id/movieLang"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="Language"
+                android:inputType="textPersonName"
+                android:textAppearance="@style/TextAppearance.AppCompat.Light.Widget.PopupMenu.Small"
+                android:textColor="@color/editTextYellowColor"
+                android:textColorHint="#80FFF700"
+                android:textSize="14sp" />
+
+
+            <EditText
+                android:id="@+id/releaseDate"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="Release date (yyyy/mm/dd)"
+                android:inputType="date"
+                android:textAppearance="@style/TextAppearance.AppCompat.Light.Widget.PopupMenu.Small"
+                android:textColor="@color/editTextYellowColor"
+                android:textColorHint="#80FFF700"
+                android:textSize="14sp" />
+
+            <EditText
+                android:id="@+id/movieDescription"
+                android:layout_width="match_parent"
+                android:layout_height="77dp"
+                android:ems="10"
+                android:hint="Description"
+                android:inputType="textMultiLine"
+                android:textColor="@color/editTextYellowColor"
+                android:textColorHint="#80FFF700"
+                android:textSize="14sp" />
+
+
+            <EditText
+                android:id="@+id/ageRest"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="Age restriction"
+                android:inputType="number"
+                android:textColor="@color/editTextYellowColor"
+                android:textColorHint="#80FFF700"
+                android:textSize="14sp" />
+
+            <EditText
+                android:id="@+id/movieUrl"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="URL"
+                android:inputType="textPersonName"
+                android:textAppearance="@style/TextAppearance.AppCompat.Light.Widget.PopupMenu.Small"
+                android:textColor="@color/editTextYellowColor"
+                android:textColorHint="#80FFF700"
+                android:textSize="14sp" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <EditText
+                    android:id="@+id/reviewRating"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:contentDescription="rating from 0:.0 to 10.0"
+                    android:ems="10"
+                    android:hint="Reviewers` rating "
+                    android:inputType="number"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Light.Widget.PopupMenu.Small"
+                    android:textColor="@color/editTextYellowColor"
+                    android:textColorHint="#80FFF700"
+                    android:textSize="14sp" />
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <!--EditText
+                    android:id="@+id/movieLink"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:hint="Movie`s Link"
+                    android:inputType="text"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Light.Widget.PopupMenu.Small"
+                    android:textColor="@color/editTextYellowColor"
+                    android:textColorHint="#80FFF700"
+                    android:textSize="14sp" /-->
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <EditText
+                    android:id="@+id/movieDuration"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:hint="Duration (hh:mm:ss)"
+                    android:inputType="time"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Light.Widget.PopupMenu.Small"
+                    android:textColor="@color/editTextYellowColor"
+                    android:textColorHint="#80FFF700"
+                    android:textSize="14sp" />
+
+            </LinearLayout>
+
+
+            <Spinner
+                android:id="@+id/Genre"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+
+                <TextView
+                    android:id="@+id/textView2"
+                    android:layout_width="165dp"
+                    android:layout_height="match_parent"
+                    android:text="Select Movie Author"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Light.Widget.PopupMenu.Small"
+                    android:textColor="#80FFF700"
+                    android:textSize="14sp" />
+
+                <Spinner
+                    android:id="@+id/Author_Spinner"
+                    android:layout_width="191dp"
+                    android:layout_height="match_parent"
+                    android:visibility="visible" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/Director"
+                    android:layout_width="164dp"
+                    android:layout_height="match_parent"
+                    android:text="Select Movie Director"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Light.Widget.PopupMenu.Small"
+                    android:textColor="#80FFF700"
+                    android:textSize="14sp"
+                    />
+
+
+                <Spinner
+                    android:id="@+id/director_spinner"
+                    android:layout_width="213dp"
+                    android:layout_height="match_parent" />
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/addmovieBtn"
+                android:layout_width="179dp"
+                android:layout_height="wrap_content"
+
+                android:background="#B6FFBF10"
+                android:onClick="AddMovieClick"
+                android:text="ADD NOW"
+                android:textColor="@android:color/background_dark"
+                android:textSize="30sp" />
+
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</android.support.constraint.ConstraintLayout>
